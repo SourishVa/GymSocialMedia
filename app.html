@@ -4,6 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App</title>
+    <link rel="stylesheet" href="app-styles.css" />
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Where you can create a post -->
+    <h1>Gym App</h1>
+    <div class="create-post">
+      <div class="post">
+        <b id="Profile"> </b>
+        <input
+          type="text"
+          id="WorkoutName"
+          class="workout-name"
+          placeholder="Enter your Workout Name"
+        />
+        <input
+          type="text"
+          id="Workout"
+          class="workout"
+          placeholder="Enter Workout"
+        />
+        <button onclick="createBox()">Submit</button>
+      </div>
+    </div>
+    <!-- Where alls posts are stored -->
+    <div id="PostBoard" class="post-board"></div>
+    <!-- <div class="post">
+        <b id="Profile"> </b>
+        <h3>Title</h3>
+        <p>Description</p>
+        <button>Up</button>
+        <button>Down</button>
+      </div> -->
+  </body>
 </html>
